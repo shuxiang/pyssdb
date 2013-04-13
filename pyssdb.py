@@ -95,3 +95,12 @@ if __name__ == '__main__':
     print c.keys('a', 'z', 1)
     print c.keys('a', 'z', 10)
     print c.get('z')
+
+    from datetime import datetime
+    _start = datetime.now()
+    for i in xrange(100000):
+        c.incr('z')
+        c.keys('a', 'a', 1)
+        c.keys('a', 'z', 10)
+        c.get('z')
+    print datetime.now() - _start
