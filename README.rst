@@ -3,7 +3,7 @@ pyssdb
 
 Description
 -----------
-A SSDB Client Library for Python.
+A SSDB Client Library for Python. It is not thread safe but greenlet safe
 
 Installation
 -------------
