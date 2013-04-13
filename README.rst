@@ -16,7 +16,7 @@ Usage
 ------------
 ::
 
-    import pyssdb
+    import pyssdb_pool as pyssdb
     c = pyssdb.Client()
     print c.set('key', 'value')
     print c.get('key')
